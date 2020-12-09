@@ -31,10 +31,12 @@ body{
 }
 
 #map{
-		top: 25%;
+	
 		position: absolute;
-        height: 70%;
+        height: 52%;
 		width: 87%;
+		border: 5px solid #ffcc66;
+		
 		}
 		
 section{
@@ -85,6 +87,53 @@ header{
 	font-family: var(--main-font);
 	text-decoration: uppercase;
 }
+#searchheading{
+	position: absolute;
+	left: 37%;
+	color: white;
+	border-width: 200%;
+	border-bottom: 5px solid white;
+	font-size: 3.5rem;
+	font-family: var(--main-font);
+	text-decoration: uppercase;
+}
+
+
+}
+#main #content{
+		background-color: transparent;
+		padding: 50px;
+		color: transparent;
+		font-size: 100px;
+
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px; /* future proofing */
+		-khtml-border-radius: 10px; /* for old Konqueror browsers */
+	}
+
+	input[type=text], input[type=password]{
+		padding: 8px 8px;
+		min-width: 300px;
+	}
+	input[type=submit], input[type=button]{
+		padding: 5px 8px;
+		background-color: #ffcc66;
+		border: 1px solid #ccc;
+		color: #333;
+		color: black;
+		cursor: pointer;
+		font-size: 20px;
+		font-family: var(--main-font);
+		text-decoration: uppercase;
+	}
+		input[type=submit]:hover, input[type=button]:hover{
+			background-color: #aaa;
+		}
+	textarea{
+		padding: 8px 8px;
+		min-width: 300px;
+	}
 	
 .nav{
 	height: 7.2rem;
