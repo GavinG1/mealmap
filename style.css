@@ -27,9 +27,18 @@ html{
 
 body{
 	overflow-x: hidden;
+	
 }
 
+#map{
+		top: 25%;
+		position: absolute;
+        height: 70%;
+		width: 87%;
+		}
+		
 section{
+	
 	padding: 3.9rem 0;
 	overflow: hidden;
 }
@@ -66,7 +75,17 @@ header{
 	background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
 }
      
-
+#mapheading{
+	position: absolute;
+	left: 36%;
+	color: white;
+	border-width: 200%;
+	border-bottom: 5px solid white;
+	font-size: 3.5rem;
+	font-family: var(--main-font);
+	text-decoration: uppercase;
+}
+	
 .nav{
 	height: 7.2rem;
 	display: flex;
@@ -777,6 +796,8 @@ footer{
 	display: flex;
 	align-items: center;
 }
+
+
 
 
 
