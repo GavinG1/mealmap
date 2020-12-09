@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,6 +11,7 @@
 	<!--- Scroll reveal CDN ---->
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./main.css"></link>
 </head>
 <body>
 	<header>
@@ -35,13 +37,112 @@
                     </li>
                 </ul>
 		    </nav>
+			
 	    </div>
+		
+		<br>
+		<br>
+		
+		<h1>
+		<div id="mapheading">       Restaurants Nearby        </div>
+		</h1>
 	</header>
     <!---Header ends--->
+	
 	<section class="hero" id="hero">
       <div class="container">
+	  </div>
+	 
+	  <div id="map"></div>
+      
+    <script>
+      var customLabel = {
+        restaurant: {
+          label: 'R'
+        },
+        bar: {
+          label: 'B'
+        }
+      };
+
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: new google.maps.LatLng(53.3497645, -6.2602732),
+          zoom: 12
+        });
+        var infoWindow = new google.maps.InfoWindow;
+
+          // Change this depending on the name of your PHP or XML file
+          downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
+            var xml = data.responseXML;
+            var markers = xml.documentElement.getElementsByTagName('marker');
+            Array.prototype.forEach.call(markers, function(markerElem) {
+              var id = markerElem.getAttribute('id');
+              var name = markerElem.getAttribute('name');
+              var address = markerElem.getAttribute('address');
+              var type = markerElem.getAttribute('type');
+              var point = new google.maps.LatLng(
+                  parseFloat(markerElem.getAttribute('lat')),
+                  parseFloat(markerElem.getAttribute('lng')));
+
+              var infowincontent = document.createElement('div');
+              var strong = document.createElement('strong');
+              strong.textContent = name
+              infowincontent.appendChild(strong);
+              infowincontent.appendChild(document.createElement('br'));
+
+              var text = document.createElement('text');
+              text.textContent = address
+              infowincontent.appendChild(text);
+              var icon = customLabel[type] || {};
+              var marker = new google.maps.Marker({
+                map: map,
+                position: point,
+                label: icon.label
+              });
+              marker.addListener('click', function() {
+                infoWindow.setContent(infowincontent);
+                infoWindow.open(map, marker);
+              });
+            });
+          });
+        }
+
+
+
+      function downloadUrl(url, callback) {
+        var request = window.ActiveXObject ?
+            new ActiveXObject('Microsoft.XMLHTTP') :
+            new XMLHttpRequest;
+
+        request.onreadystatechange = function() {
+          if (request.readyState == 4) {
+            request.onreadystatechange = doNothing;
+            callback(request, request.status);
+          }
+        };
+
+        request.open('GET', url, true);
+        request.send(null);
+      }
+
+      function doNothing() {}
+    </script>
       </div>
   </section>
+  
+  
+  
+  <div id="map"></div>
+  
+  
+  <!--- google api key --->
+  
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVjO_k4XcKwp451zcjGhABq7fOB4MiLmY&callback=initMap">
+    </script>
+	
+	
 
   <footer>
         <div class="container">
