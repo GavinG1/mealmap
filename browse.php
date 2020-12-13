@@ -19,16 +19,16 @@
 					<i class="fas fa-bars"></i>
 					<i class="fas fa-times"></i>
                 </div>
-                  <a href="index.html" class="logo1"><img src="logo.png" alt=""> </a>
+                <a href="index.html" class="logo1"><img src="logo.png" alt=""> </a>
                 <ul class="nav-list">
                 	<li class="nav-item">
                 		<a href="index.php" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                		<a href="browse.php" class="nav-link">Browse</a>
+                		<a href="browse.php" class="nav-link active">Browse</a>
                     </li>
                     <li class="nav-item">
-                		<a href="nearme.php" class="nav-link active">Near Me</a>
+                		<a href="nearme.php" class="nav-link">Near Me</a>
                     </li>
                     <li class="nav-item">
                 		<a href="res.php" class="nav-link">My Reservations</a>
@@ -36,36 +36,46 @@
                 </ul>
 		    </nav>
 	    </div>
+
+
+		
 	</header>
-		
-		<br>
-		<br>
-		<br>
-		
-		<h1>
-		<div id="searchheading">       Search Restaurant        </div>
-		<br>
-		<br>
-		<br>
-		<h2>
-		<div id="main" class="shadow-box"><div id="content">
-				
-				<center>
-				<form action="" method="GET" name="">
-					<table>
-					
-						<tr>
-							<td><input type="text" name="k" placeholder= "Enter Restaurant Name" autocomplete="off"></td>
-							<td><input type="submit" name="" value="Search" ></td>
-						</tr>
-					
-					</table>
-				</form>
-			</div> </div>
-			</h2>
-		</h1>
-	
-  <section class="container" id="list">
+
+
+        <h2 class="sub-headline11">
+          <span class="first-letter">S</span>earch
+        </h2>
+  
+    <br>
+    <br>
+    <br>
+    
+    <h1>
+    <div id="searchheading">             </div>
+    <br>
+    <br>
+    <br>
+    <h2>
+    <div id="main" class="shadow-box"><div id="content">
+        
+        <center>
+        <form action="" method="GET" name="">
+          <table>
+          
+            <tr>
+              <td><input type="text" name="k" placeholder= "Enter Restaurant Name" autocomplete="off"></td>
+              <td><input type="submit" name="" value="Search" ></td>
+            </tr>
+          </table>
+
+        </form>
+      </center>
+      </div> </div>
+      </h2>
+    </h1>
+    
+
+<section class="container" id="list">
       <div class="item">
         <img src="https://lh3.googleusercontent.com/proxy/YBlZhGF7Qcsu1Omx-o9a29RWnU3GrX9_Qa9__O3Qzqy9LUmNEnj_jSOqjVZcybodMiY6nHWV7vbik7TgUf3pdlURhQ8fv10hkEy-xOt65NJytx7XYA" height="50">
         <h2>Flannagans Bar and Restaurant</h2>
@@ -210,48 +220,48 @@ While we are known predominately for our stone baked pizzas, we also have a pass
 
 
   <footer>
-    <div class="container">
-       <div class="back-to-top">
+		<div class="container">
+		   <div class="back-to-top">
                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
-       </div>
-       <div class="footer-content">
-           <div class="footer-content-about animate-top">
-            <h4>About MealMap</h4>
-               <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-               <p>  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-           </div>
-           <div class="footer-content-divider animate-bottom">
+		   </div>
+		   <div class="footer-content">
+		   	   <div class="footer-content-about animate-top">
+		   	   	<h4>About MealMap</h4>
+		   	   	   <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+		   	   	   <p>  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+		   	   </div>
+		   	   <div class="footer-content-divider animate-bottom">
                    <div class="social-media">
                        <h4>Follow Along</h4>
                           <ul class="social-icons">
-                            <li>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                             </li>
-                             <li>
-                              <a href="#"><i class="fab fa-facebook-square"></i></a>
-                             </li>
-                             <li>
-                              <a href="#"><i class="fab fa-pinterest"></i></a>
-                             </li>
-                             <li>
-                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                             </li>
+                          	<li>
+                          		<a href="#"><i class="fab fa-twitter"></i></a>
+                          	 </li>
+                          	 <li>
+                          		<a href="#"><i class="fab fa-facebook-square"></i></a>
+                          	 </li>
+                          	 <li>
+                          		<a href="#"><i class="fab fa-pinterest"></i></a>
+                          	 </li>
+                          	 <li>
+                          		<a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          	 </li>
                           </ul>
                       </div>
                       <div class="newsletter-container">
-                        <h4>Newsletter</h4>
-                        <form action="" class="newsletter-form">
-                          <input type="text" class="newsletter-input" placeholder="Your email address ...">
+                      	<h4>Newsletter</h4>
+                      	<form action="" class="newsletter-form">
+                      		<input type="text" class="newsletter-input" placeholder="Your email address ...">
 
-                          <button class="newsletter-btn" type="submit">
-                            <i class="fas fa-envelope"></i>
-                          </button>
+                      		<button class="newsletter-btn" type="submit">
+                      			<i class="fas fa-envelope"></i>
+                      		</button>
                       </form>
-              </div>
-          </div>
-      </div>
-  </footer>
-  <!---footer ends--->
+		   	      </div>
+		      </div>
+		  </div>
+	</footer>
+	<!---footer ends--->
  <script src="main.js"></script>
 </body>
 </html>
