@@ -848,6 +848,40 @@ footer{
 
 
 
+*//Anthony
+.list {
+	width: 100%;
+	height: 600px;
+	border-spacing: 10px;
+	background-color: rgba(250, 229, 211, 0.5);
+	font-family: Garamond, serif;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-around;
+}
+
+.item p{
+	color: #17202A;
+}
+
+.item {
+	order: 1;
+	background-color: rgba(250, 229, 211, 0.5);
+	width: 100%;
+}
+
+
+
+.item img {
+	width: 200px;
+	height: 200px;
+	float: top-left;
+}
+
+
+
 
 
 
