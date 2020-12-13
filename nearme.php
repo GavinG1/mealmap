@@ -24,16 +24,16 @@
                 <a href="index.html" class="logo1"><img src="logo.png" alt=""> </a>
                 <ul class="nav-list">
                 	<li class="nav-item">
-                		<a href="index.html" class="nav-link">Home</a>
+                		<a href="index.php" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                		<a href="browse.html" class="nav-link">Browse</a>
+                		<a href="browse.php" class="nav-link">Browse</a>
                     </li>
                     <li class="nav-item">
-                		<a href="nearme.html" class="nav-link active">Near Me</a>
+                		<a href="nearme.php" class="nav-link active">Near Me</a>
                     </li>
                     <li class="nav-item">
-                		<a href="res.html" class="nav-link">My Reservations</a>
+                		<a href="res.php" class="nav-link">My Reservations</a>
                     </li>
                 </ul>
 		    </nav>
